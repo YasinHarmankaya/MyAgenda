@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <title>My Agenda</title>
+</head>
+
+<body>
+    <!-- App Wrapper -->
+    <main class="app">
+        <!-- Greeting -->
+        <section class="greeting">
+            <h2 class="title">
+                Merhaba <input type="text" id="name" placeholder="Name Here">
+            </h2>
+            <p class="date-time">11.11.2022</p>
+        </section>
+        <!-- End of Greeting -->
+
+        <!-- Sidebar menü -->
+        <section class="side-bar">
+                <button class="prayer-time">Namaz Vakitleri</button>
+                <button class="weather-forecast">Hava Durmu</button>
+        </section>        
+        <!-- End Sidebar menü -->
+
+        <!-- New Todo -->
+        <section class="create-todo">
+            <h3>YAPILACAK LİSTESİ OLUŞTUR</h3>
+            <form id="new-todo-form">
+                <h4>Neler Yapacaksın?</h4>
+                <input 
+                type="text" 
+                placeholder="Erken kalkan yol alır. Erken Kalk" 
+                id="content" 
+                name="content"/>
+                <h4>Kategori</h4>
+                <div class="options">
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="category" 
+                        id="category1" 
+                        value="business">
+                        <span class="bubble business"></span>
+                        <div>İş</div>
+                    </label>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="category" 
+                        id="category2" 
+                        value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Kişisel</div>
+                    </label>
+                </div>
+                <input type="submit" value="Ekle">
+            </form>
+        </section>
+        <!-- End New Todo -->
+
+        <!-- Todo Lists -->
+        <section class="todo-list">
+            <h3>YAPILACAKLAR</h3>
+            <div class="list" id="todo-list">
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox"/>
+                        <span class="bubble business"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Code çalış" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Düzenle</button>
+                        <button class="delete">Sil</button>
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox"/>
+                        <span class="bubble personal"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Css çalış" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Düzenle</button>
+                        <button class="delete">Sil</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Todo Lists -->
+    </main>
+    <!-- End of App Wrapper -->
+
+    <!-- java script import -->
+    <script src="main.js"></script>
+    <!-- End java script import -->
+</body>
+
+</html>
