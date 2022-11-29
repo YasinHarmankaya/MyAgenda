@@ -35,9 +35,15 @@ input:not([type="radio"]):not([type="checkbox"]), button{
 }
 
 /* End of resets */
+.app{
+	width: 50%;
+}
 body{
     background-image: var(--background);
     color: var(--mixed-white);
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 section{
@@ -84,35 +90,6 @@ h4{
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
-}
-
-.side-bar{
-    position: relative;
-}
-
-
-.weather-forecast{
-    position: absolute;
-    right: -4.50rem;
-    top: 17rem;
-    color: var(--mixed-white);
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: block;
-    transform: rotate(-90deg);
-    cursor: pointer;
-}
-.prayer-time{
-    position: absolute;
-    right: -5.75rem;
-    top: 5rem;
-    color: var(--mixed-white);
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: block;
-    transform: rotate(-90deg);
-    cursor: pointer;
-
 }
 .create-todo{
     width: 95%;
@@ -279,3 +256,5 @@ input:checked ~ .bubble::after {
 	text-decoration: line-through;
 	color: var(--grey);
 }
+
+
