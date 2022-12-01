@@ -36,14 +36,26 @@ input:not([type="radio"]):not([type="checkbox"]), button{
 
 /* End of resets */
 .app{
-	width: 50%;
+	margin:5rem 5rem;
+	width: 40%;
+	/* height: 100vh; */
+	background-color: rgba(54, 54, 54, 0.5);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
 }
 body{
-    background-image: var(--background);
     color: var(--mixed-white);
 	display: flex;
     flex-direction: row;
     justify-content: space-around;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	
 }
 
 section{
@@ -257,4 +269,87 @@ input:checked ~ .bubble::after {
 	color: var(--grey);
 }
 
+.otherApp{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:5rem 5rem;
+	width: 40%;
+	/* height: 100vh; */
+	background-color: rgba(54, 54, 54, 0.5);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+}
 
+.weather{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:1rem 5rem;
+}
+
+.weatherContent{
+	margin-top: 2rem;
+	text-align: center;
+}
+.weatherHeader{
+	margin-top: 2rem;
+	text-align: center;
+}
+
+#searchBar{
+	width: 100%;
+	padding: 10px;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	border-bottom:2px solid var(--primary);
+	color: var(--mixed-white);
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.city{
+	font-size: 4rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+.temp{
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+.desc{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+.minMax{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.prayer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:5rem 5rem;
+}
+.prayerHeader{
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+.prayerTimeMain p{
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.randomAyah{
+	text-align: center;
+}
+
+.prayerTimeMain p span{
+	font-size: 1.5rem;
+	font-weight: 600;
+}

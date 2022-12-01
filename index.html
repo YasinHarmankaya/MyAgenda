@@ -12,7 +12,7 @@
     <title>My Agenda</title>
 </head>
 
-<body>
+<body style="background-image:url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1748&q=80)">
     <!-- App Wrapper -->
     <main class="app">
         <!-- Greeting -->
@@ -89,7 +89,40 @@
             </div>
         </section>
         <!-- End Todo Lists -->
+        
     </main>
+    <aside class="otherApp">
+        <section class="weather">
+            <div class="weatherHeader">
+                <h1>Hava Durumu</h1>
+                <input type="text" id="searchBar" placeholder="Şehir Giriniz...">
+            </div>
+            <div class="weatherContent">
+                <div class="city"></div>
+                <div class="temp"></div>
+                <div class="desc"></div>
+                <div class="minMax"></div>
+            </div>
+        </section>
+        <section class="prayer">
+            <div class="prayerHeader">
+                <h1><span class="prayerCityName"></span> için Namaz Vakitleri</h1>
+                <input type="text" id="searchBar" class="prayerCity" placeholder="Şehir Giriniz...">
+            </div>
+            <div class="prayerTimeMain">
+                <p>İmsak: <span class="imsak"></span></p>
+                <p>Güneş: <span class="gunes"></span></p>
+                <p>Öğle: <span class="ogle"></span></p>
+                <p>İkindi: <span class="ikindi"></span></p>
+                <p>Akşam: <span class="aksam"></span></p>
+                <p>Yatsı: <span class="yatsi"></span></p>
+            </div>
+            <div class="randomAyah">
+                <p class="ayah"></p>
+                <p class="surahAndAyahNumber"></p>
+            </div>
+        </section>
+    </aside>
     <!-- End of App Wrapper -->
 
     <!-- java script import -->
